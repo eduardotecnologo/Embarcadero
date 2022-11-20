@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UCalculadora.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void Calculadora::SetOperandoUm(const float operandoUm)
+{
+    this->operandoUm = operandoUm;
+}
+
+void Calculadora::SetOperandoDois(const float operandoDois)
+{
+    this->operandoDois = operandoDois;
+}
+
+float Calculadora::GetOperandoUm()
+{
+    return this->operandoUm;
+}
+
+float Calculadora::GetOperandoDOis()
+{
+	return this->operandoDois;
+}
+
+float Calculadora::Soma()
+{
+    return operandoUm + operandoDois;
+}
+
+float Calculadora::Subtria()
+{
+
+}
+
+float Calculadora::Multiplique()
+{
+
+}
+
+float Calculadora::Divida()
+{
+
+}

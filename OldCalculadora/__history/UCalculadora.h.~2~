@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef UCalculadoraH
+#define UCalculadoraH
+//---------------------------------------------------------------------------
+		void SetOperandoUm(const float operandoUm);
+		void SetOperandoDois(const float operandoDois);
+		float GetOperandoUm();
+		float GetOperandoDOis();
+		float Soma();
+		float Subtria();
+		float Multiplique();
+		float Divida();
+
+#endif

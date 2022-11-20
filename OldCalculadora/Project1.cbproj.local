@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/19 21:48:50.000.274,=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 21:48:50.000.047,=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/19 21:57:33.000.931,=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/19 21:57:34.000.324,=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 21:59:12.000.113,D:\Git\developer\Embarcadeiro\Calculadora\UFormPrincipal.dfm=D:\Git\developer\Embarcadeiro\Unit1.dfm</Transaction>
+    <Transaction>2022/11/19 21:59:12.000.113,D:\Git\developer\Embarcadeiro\Calculadora\UFormPrincipal.h=D:\Git\developer\Embarcadeiro\Unit1.h</Transaction>
+    <Transaction>2022/11/19 21:59:12.000.113,D:\Git\developer\Embarcadeiro\Calculadora\UFormPrincipal.cpp=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 22:01:28.000.499,=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 22:01:46.000.106,D:\Git\developer\Embarcadeiro\Calculadora\UCalculadora.cpp=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 22:01:46.000.106,D:\Git\developer\Embarcadeiro\Calculadora\UCalculadora.h=D:\Git\developer\Embarcadeiro\Unit1.h</Transaction>
+    <Transaction>2022/11/19 22:15:08.000.044,=D:\Git\developer\Embarcadeiro\Unit2.cpp</Transaction>
+    <Transaction>2022/11/19 22:18:34.000.318,D:\Git\developer\Embarcadeiro\Calculadora\UFrmCalculadora.cpp=D:\Git\developer\Embarcadeiro\Unit2.cpp</Transaction>
+    <Transaction>2022/11/19 22:18:34.000.318,D:\Git\developer\Embarcadeiro\Calculadora\UFrmCalculadora.h=D:\Git\developer\Embarcadeiro\Unit2.h</Transaction>
+    <Transaction>2022/11/19 22:18:34.000.318,D:\Git\developer\Embarcadeiro\Calculadora\UFrmCalculadora.dfm=D:\Git\developer\Embarcadeiro\Unit2.dfm</Transaction>
+    <Transaction>2022/11/20 01:08:06.000.444,D:\Git\developer\Embarcadeiro\Calculadora\Project1PCH1.h=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/20 01:08:12.000.304,D:\Git\developer\Embarcadeiro\Calculadora\Project1.cbproj=D:\Git\developer\Embarcadeiro\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

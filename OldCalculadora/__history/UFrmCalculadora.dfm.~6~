@@ -1,0 +1,109 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'FrmCalculadora'
+  ClientHeight = 287
+  ClientWidth = 515
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  Visible = True
+  OnClose = EvCloseFormOnClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 71
+    Top = 32
+    Width = 140
+    Height = 25
+    Caption = 'Primeiro Valor:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 67
+    Top = 130
+    Width = 144
+    Height = 25
+    Caption = 'Segundo Valor:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 256
+    Top = 8
+    Width = 180
+    Height = 25
+    Caption = 'Calculadora Marota'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object EdtOperando1: TEdit
+    Left = 79
+    Top = 82
+    Width = 121
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object EdtOperando2: TEdit
+    Left = 79
+    Top = 184
+    Width = 121
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object rdgOperacao: TRadioGroup
+    Left = 256
+    Top = 50
+    Width = 185
+    Height = 105
+    Caption = 'Opera'#231#245'es::.'
+    ItemIndex = 0
+    Items.Strings = (
+      '+ Somar'
+      '-  Subtrair'
+      '* Multiplicar'
+      '/ Dividir')
+    TabOrder = 2
+  end
+  object GroupBox1: TGroupBox
+    Left = 256
+    Top = 184
+    Width = 185
+    Height = 82
+    Caption = 'Resultado::.'
+    TabOrder = 3
+  end
+end

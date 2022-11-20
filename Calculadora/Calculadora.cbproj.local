@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/19 21:48:50.000.274,=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/19 21:48:50.000.047,=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/20 09:16:01.092,=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/20 09:16:01.547,=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/20 09:40:04.807,D:\Git\developer\Embarcadeiro\Calculadora\UFrmPrincipal.dfm=D:\Git\developer\Embarcadeiro\Unit1.dfm</Transaction>
+    <Transaction>2022/11/20 09:40:04.807,D:\Git\developer\Embarcadeiro\Calculadora\UFrmPrincipal.h=D:\Git\developer\Embarcadeiro\Unit1.h</Transaction>
+    <Transaction>2022/11/20 09:40:04.807,D:\Git\developer\Embarcadeiro\Calculadora\UFrmPrincipal.cpp=D:\Git\developer\Embarcadeiro\Unit1.cpp</Transaction>
+    <Transaction>2022/11/20 09:48:11.497,D:\Git\developer\Embarcadeiro\Calculadora\CalculadoraPCH1.h=D:\Git\developer\Embarcadeiro\Project1PCH1.h</Transaction>
+    <Transaction>2022/11/20 09:48:25.000,D:\Git\developer\Embarcadeiro\Calculadora\Calculadora.cbproj=D:\Git\developer\Embarcadeiro\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

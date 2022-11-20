@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef UCalculadoraH
+#define UCalculadoraH
+//---------------------------------------------------------------------------
+
+class Calculadora
+{
+      private:
+              void operandoUm;
+              void operandoDois;
+      public:
+}
+
+#endif

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <limits>
+
+int PressEnterToContinue();
+
+int main(int argc, char** argv)
+{
+	int ladoA, ladoB, ladoC;
+
+	printf("Digite os 3 valores: \n");
+	scanf("%d %d %d", &ladoA, &ladoB, &ladoC);
+
+	if(ladoA == ladoB){
+	   if(ladoB == ladoC){
+			printf("Opa! O triangulo é equilátero!");
+	   }else{
+			printf("\na! O triango não é Equilátero!");
+		}
+	}else{
+			printf("\na! O triango não é Equilátero!");
+	}
+
+	PressEnterToContinue();
+    system("PAUSE");
+}
+
+int PressEnterToContinue(){
+	std::cout << "\nPress ENTER to continue...." << std::flush;
+	std::cin.ignore( std::numeric_limits <std::streamsize> ::max(), '\n' );
+}
