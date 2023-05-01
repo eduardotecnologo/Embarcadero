@@ -7,6 +7,7 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 class TFrmCalculadora : public TForm
 {
@@ -19,6 +20,9 @@ __published:	// IDE-managed Components
     TButton *BtnCalcular;
     TButton *BtnLimpar;
     TButton *BtnSair;
+    TRadioGroup *rdgOperacao;
+    TGroupBox *GroupBox1;
+    TPanel *PnlResultado;
     void __fastcall EvOnClose(TObject *Sender, TCloseAction &Action);
     void __fastcall EvCloseCacl(TObject *Sender);
 private:	// User declarations

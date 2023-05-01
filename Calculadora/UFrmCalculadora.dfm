@@ -4,8 +4,8 @@ object FrmCalculadora: TFrmCalculadora
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Calculadora'
-  ClientHeight = 241
-  ClientWidth = 484
+  ClientHeight = 277
+  ClientWidth = 452
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -74,9 +74,9 @@ object FrmCalculadora: TFrmCalculadora
   end
   object BtnCalcular: TButton
     Left = 24
-    Top = 200
+    Top = 159
     Width = 121
-    Height = 25
+    Height = 33
     Caption = 'Calcular'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -87,10 +87,10 @@ object FrmCalculadora: TFrmCalculadora
     TabOrder = 2
   end
   object BtnLimpar: TButton
-    Left = 184
-    Top = 200
+    Left = 24
+    Top = 199
     Width = 121
-    Height = 25
+    Height = 33
     Caption = 'Limpar'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -101,10 +101,10 @@ object FrmCalculadora: TFrmCalculadora
     TabOrder = 3
   end
   object BtnSair: TButton
-    Left = 344
-    Top = 200
+    Left = 24
+    Top = 238
     Width = 121
-    Height = 25
+    Height = 34
     Caption = 'Sair'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -114,5 +114,37 @@ object FrmCalculadora: TFrmCalculadora
     ParentFont = False
     TabOrder = 4
     OnClick = EvCloseCacl
+  end
+  object rdgOperacao: TRadioGroup
+    Left = 224
+    Top = 48
+    Width = 205
+    Height = 105
+    Caption = '&Opera'#231#245'es::.'
+    ItemIndex = 0
+    Items.Strings = (
+      '+ Somar'
+      '- Subtrair'
+      '* Multiplicar'
+      '/ Dividir')
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox
+    Left = 224
+    Top = 159
+    Width = 205
+    Height = 110
+    Caption = 'Resultado::.'
+    TabOrder = 6
+    object PnlResultado: TPanel
+      Left = 2
+      Top = 15
+      Width = 201
+      Height = 93
+      Align = alClient
+      TabOrder = 0
+      ExplicitTop = 32
+      ExplicitHeight = 83
+    end
   end
 end
