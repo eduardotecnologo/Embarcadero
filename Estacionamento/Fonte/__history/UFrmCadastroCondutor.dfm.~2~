@@ -1,0 +1,6 @@
+inherited FrmCadastroCondutor: TFrmCadastroCondutor
+  Caption = 'Cadastro Condutor'
+  ClientWidth = 628
+  ExplicitWidth = 640
+  TextHeight = 15
+end

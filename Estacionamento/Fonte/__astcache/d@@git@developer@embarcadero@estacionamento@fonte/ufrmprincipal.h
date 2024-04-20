@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #ifndef UFrmPrincipalH
 #define UFrmPrincipalH
@@ -8,39 +8,37 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
-#include <Vcl.WinXCalendars.hpp>
 //---------------------------------------------------------------------------
-class TfrmPrincipal : public TForm
+class TFrmPrincipal : public TForm
 {
 __published:	// IDE-managed Components
-    TMainMenu *mnmPrincipal;
-    TMenuItem *Cadastro1;
-    TMenuItem *Processo1;
-    TMenuItem *Processo2;
-    TMenuItem *Condutor1;
-    TMenuItem *Condutor2;
-    TMenuItem *Modelo1;
-    TMenuItem *N1;
-    TMenuItem *Veculo1;
-    TMenuItem *ipo1;
-    TMenuItem *N2;
-    TMenuItem *Sair1;
-    TMenuItem *icket1;
-    TMenuItem *Veculo2;
-    TMenuItem *Permanncia1;
-    TCalendarPicker *CalendarPicker1;
-    void __fastcall EvEncerrarSistema(TObject *Sender);
-    void __fastcall EvCadastroCondutorClick(TObject *Sender);
-    void __fastcall EvCadastroMontadora(TObject *Sender);
-    void __fastcall EvCadastroModelo(TObject *Sender);
-    void __fastcall EvCadastroVeiculos(TObject *Sender);
-    void __fastcall EvCadastrarTipo(TObject *Sender);
-    void __fastcall EvCadTicket(TObject *Sender);
+	TMainMenu *mnmPrincipal;
+	TMenuItem *A1;
+	TMenuItem *Arquivo1;
+	TMenuItem *Sair1;
+	TMenuItem *N1;
+	TMenuItem *Relatrio1;
+	TMenuItem *Modelo1;
+	TMenuItem *N2;
+	TMenuItem *N3;
+	TMenuItem *ipo1;
+	TMenuItem *N4;
+	TMenuItem *N5;
+	TMenuItem *icket1;
+	TMenuItem *Veculo1;
+	TMenuItem *Permanncia1;
+	TMenuItem *ema1;
+	void __fastcall EvEncerrarSistema(TObject *Sender);
+	void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroMontadoraClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroModeloClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroVeiculoClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroTipoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-    __fastcall TfrmPrincipal(TComponent* Owner);
+	__fastcall TFrmPrincipal(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TfrmPrincipal *frmPrincipal;
+extern PACKAGE TFrmPrincipal *FrmPrincipal;
 //---------------------------------------------------------------------------
 #endif

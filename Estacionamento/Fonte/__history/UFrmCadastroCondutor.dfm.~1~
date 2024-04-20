@@ -1,0 +1,4 @@
+inherited FrmCadastroCondutor: TFrmCadastroCondutor
+  Caption = 'Cadastro Condutor'
+  TextHeight = 15
+end
