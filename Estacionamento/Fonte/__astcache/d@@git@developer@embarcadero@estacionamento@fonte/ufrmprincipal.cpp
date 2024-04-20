@@ -7,56 +7,53 @@
 #include "UFrmCadastroCondutor.h"
 #include "UFrmCadastroMontadora.h"
 #include "UFrmCadastroModelo.h"
-#include "UFrmCadastroVeiculos.h"
-#include "UFrmCadastrarTipo.h"
-#include "UFrmCadTicket.h"
+#include "UFrmCadastroVeiculo.h"
+#include "UFrmCadastroTipo.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TfrmPrincipal *frmPrincipal;
+TFrmPrincipal *FrmPrincipal;
 //---------------------------------------------------------------------------
-__fastcall TfrmPrincipal::TfrmPrincipal(TComponent* Owner) : TForm(Owner)
+__fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner)
+	: TForm(Owner)
 {
 
 }
-//---------------------------------------------------------------------------
-void __fastcall TfrmPrincipal::EvEncerrarSistema(TObject *Sender)
+
+
+void __fastcall TFrmPrincipal::EvEncerrarSistema(TObject *Sender)
 {
-   Close();
+    Close();
 }
 //---------------------------------------------------------------------------
 
-
-void __fastcall TfrmPrincipal::EvCadastroCondutorClick(TObject *Sender)
+void __fastcall TFrmPrincipal::EvAtivarCadastroCondutorClick(TObject *Sender)
 {
-   new TFrmCadastroCondutor(this);
+    new TFrmCadastroCondutor(this);
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TfrmPrincipal::EvCadastroMontadora(TObject *Sender)
+void __fastcall TFrmPrincipal::EvAtivarCadastroMontadoraClick(TObject *Sender)
 {
-   new TFrmCadastroMontadora(this);
+    new TFrmCadastroMontadora(this);
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TfrmPrincipal::EvCadastroModelo(TObject *Sender)
+void __fastcall TFrmPrincipal::EvAtivarCadastroModeloClick(TObject *Sender)
 {
-   new TFrmCadastroModelo(this);
+    new TFrmCadastroModelo(this);
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TfrmPrincipal::EvCadastroVeiculos(TObject *Sender)
+void __fastcall TFrmPrincipal::EvAtivarCadastroVeiculoClick(TObject *Sender)
 {
-   new TFrmCadastroVeiculo(this);
+	new TFrmCadastroVeiculo(this);
 }
 //---------------------------------------------------------------------------
-void __fastcall TfrmPrincipal::EvCadastrarTipo(TObject *Sender)
+
+void __fastcall TFrmPrincipal::EvAtivarCadastroTipoClick(TObject *Sender)
 {
-   new TFrmCadastroTipo(this);
-}
-void __fastcall TfrmPrincipal::EvCadTicket(TObject *Sender)
-{
-   new TFrmCadTicket(this);
+    new TFrmCadastroTipo(this);
 }
 //---------------------------------------------------------------------------
 
