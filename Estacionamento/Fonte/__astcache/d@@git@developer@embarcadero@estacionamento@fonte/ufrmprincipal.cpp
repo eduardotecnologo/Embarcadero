@@ -1,6 +1,7 @@
 ﻿//---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <Vcl.Themes.hpp>
 #pragma hdrstop
 
 #include "UFrmPrincipal.h"
@@ -19,6 +20,27 @@ __fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner)
 {
 
 }
+
+void __fastcall ApplyDarkTheme()
+{
+	TStyleManager::TrySetStyle("Carbon");
+}
+
+void __fastcall ApplyLightTheme()
+{
+	TStyleManager::TrySetStyle("Aqua Light Slate");
+}
+
+void __fastcall ApplyGlossyTheme()
+{
+	TStyleManager::TrySetStyle("Glossy");
+}
+
+void __fastcall ApplyPurpleTheme()
+{
+	TStyleManager::TrySetStyle("Windows10 Purple");
+}
+
 
 
 void __fastcall TFrmPrincipal::EvEncerrarSistema(TObject *Sender)
@@ -54,6 +76,33 @@ void __fastcall TFrmPrincipal::EvAtivarCadastroVeiculoClick(TObject *Sender)
 void __fastcall TFrmPrincipal::EvAtivarCadastroTipoClick(TObject *Sender)
 {
     new TFrmCadastroTipo(this);
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TFrmPrincipal::mnDarkCLickClick(TObject *Sender)
+{
+	ApplyDarkTheme();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TFrmPrincipal::mnLightClickClick(TObject *Sender)
+{
+   ApplyLightTheme();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::mnGlossyClickClick(TObject *Sender)
+{
+   ApplyGlossyTheme();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::mnPurpleClickClick(TObject *Sender)
+{
+   ApplyPurpleTheme();
 }
 //---------------------------------------------------------------------------
 

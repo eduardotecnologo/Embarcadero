@@ -5,8 +5,8 @@ object FrmPrincipal: TFrmPrincipal
   Caption = 
     'Formul'#225'rio Principal - Sistema de controle de ticket de estacion' +
     'amento'
-  ClientHeight = 483
-  ClientWidth = 1001
+  ClientHeight = 455
+  ClientWidth = 926
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -71,6 +71,22 @@ object FrmPrincipal: TFrmPrincipal
     end
     object ema1: TMenuItem
       Caption = 'Tema'
+      object mnDarkCLick: TMenuItem
+        Caption = 'Dark'
+        OnClick = mnDarkCLickClick
+      end
+      object mnLightClick: TMenuItem
+        Caption = 'Light'
+        OnClick = mnLightClickClick
+      end
+      object mnGlossyClick: TMenuItem
+        Caption = 'Glossy'
+        OnClick = mnGlossyClickClick
+      end
+      object mnPurpleClick: TMenuItem
+        Caption = 'Purple'
+        OnClick = mnPurpleClickClick
+      end
     end
   end
 end
