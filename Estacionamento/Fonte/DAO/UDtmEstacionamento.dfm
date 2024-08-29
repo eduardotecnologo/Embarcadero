@@ -1,0 +1,28 @@
+object dtmEstacionamento: TdtmEstacionamento
+  OnCreate = DataModuleCreate
+  Height = 435
+  Width = 871
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=estacionamento'
+      'User_Name=postgres'
+      'Password=root'
+      'Server=localhost'
+      'DriverID=PG')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 16
+  end
+  object FDPhysPgDriverLink: TFDPhysPgDriverLink
+    VendorHome = 'C:\postgres\psqlodbc_16_64'
+    OnDriverCreated = FDPhysPgDriverLinkDriverCreated
+    Left = 48
+    Top = 80
+  end
+  object FDGUIxWaitCursor: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 48
+    Top = 152
+  end
+end

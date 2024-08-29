@@ -1,8 +1,8 @@
 inherited FrmCadastroModelo: TFrmCadastroModelo
   Caption = 'Cadastro de Modelo'
+  StyleElements = [seFont, seClient, seBorder]
   TextHeight = 15
   inherited tlbCadastroCRUD: TToolBar
-    ExplicitTop = 407
-    ExplicitWidth = 952
+    ExplicitTop = 384
   end
 end

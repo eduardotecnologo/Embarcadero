@@ -1,0 +1,19 @@
+object dtmEstacionamento: TdtmEstacionamento
+  OnCreate = DataModuleCreate
+  Height = 435
+  Width = 871
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=estacionamento'
+      'User_Name=postgres'
+      'Password=root'
+      'DriverID=PG')
+    Left = 48
+    Top = 16
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorLib = 'C:\postgres\pgsql\bin\libpq.dll'
+    Left = 48
+    Top = 80
+  end
+end

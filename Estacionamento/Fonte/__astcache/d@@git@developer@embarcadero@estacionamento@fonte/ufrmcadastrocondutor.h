@@ -10,6 +10,8 @@
 #include "UFrmModeloCadastroCRUD.h"
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <System.ImageList.hpp>
+#include <Vcl.ImgList.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroCondutor : public TFrmModeloCadastroCRUD
 {

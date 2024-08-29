@@ -4,13 +4,16 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
-USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
-USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
-USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
-USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
-USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastroVeiculo);
+#include <Vcl.Styles.hpp>
+#include <Vcl.Themes.hpp>
 USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
+USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastroVeiculo);
+USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
+USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
+USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
+USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
+USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
+USEFORM("UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -19,6 +22,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
+		Application->CreateForm(__classid(TdtmEstacionamento), &dtmEstacionamento);
 		Application->Run();
 	}
 	catch (Exception &exception)

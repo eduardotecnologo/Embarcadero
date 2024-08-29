@@ -2,7 +2,9 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   Caption = 'Cadastro de Ve'#237'culo'
   TextHeight = 15
   inherited tlbCadastroCRUD: TToolBar
-    ExplicitTop = 407
-    ExplicitWidth = 952
+    Top = 384
+    Height = 58
+    ExplicitTop = 384
+    ExplicitHeight = 58
   end
 end

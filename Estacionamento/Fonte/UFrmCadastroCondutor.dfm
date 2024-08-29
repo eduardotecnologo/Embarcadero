@@ -5,5 +5,6 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
   TextHeight = 15
   inherited tlbCadastroCRUD: TToolBar
     Width = 957
+    ExplicitWidth = 957
   end
 end

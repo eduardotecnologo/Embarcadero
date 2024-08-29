@@ -1,8 +1,9 @@
 inherited FrmCadastroMontadora: TFrmCadastroMontadora
   Caption = 'Cadastro de Montadora'
+  StyleElements = [seFont, seClient, seBorder]
+  OnCreate = FormCreate
   TextHeight = 15
   inherited tlbCadastroCRUD: TToolBar
-    ExplicitTop = 407
-    ExplicitWidth = 952
+    ExplicitTop = 384
   end
 end
