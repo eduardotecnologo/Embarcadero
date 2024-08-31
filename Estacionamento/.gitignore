@@ -1,0 +1,52 @@
+__astcache/
+__history/
+__recovery/
+# Arquivos de compilação
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.lib
+
+# Arquivos temporários
+*.~*
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+
+# Diretórios de saída
+Win32/
+Win64/
+Debug/
+Release/
+
+# Arquivos de projeto específicos do C++ Builder
+*.cbproj.local
+*.groupproj.local
+*.res
+*.dfm
+*.fmx
+
+# Arquivos de backup
+*.bak
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração do usuário
+*.suo
+*.user
+
+# Outros
+Thumbs.db
+desktop.ini

@@ -13,7 +13,7 @@ USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
 USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
 USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
 USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
-USEFORM("UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
+USEFORM("DAO\UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {

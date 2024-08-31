@@ -16,11 +16,17 @@
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroMontadora : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
-	void __fastcall FormCreate(TObject *Sender);
+	TDBEdit *dbEditCodigo;
+	TLabel *Label1;
+	TLabel *Label2;
+	TDBEdit *dbEditNome;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroMontadora(TComponent* Owner);
