@@ -51,9 +51,35 @@ object dtmEstacionamento: TdtmEstacionamento
     end
   end
   object FDModelo: TFDQuery
+    Active = True
     Connection = FDConnection
+    SQL.Strings = (
+      'SELECT MOD_COD,'
+      '       MON_COD,'
+      '       MOD_NOM'
+      '     FROM MODELO;')
     Left = 152
     Top = 72
+    object FDModelomod_cod: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 5
+      FieldName = 'mod_cod'
+      Origin = 'mod_cod'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDModelomon_cod: TIntegerField
+      DisplayLabel = 'Montadora'
+      FieldName = 'mon_cod'
+      Origin = 'mon_cod'
+    end
+    object FDModelomod_nom: TWideStringField
+      DisplayLabel = 'Modelo'
+      FieldName = 'mod_nom'
+      Origin = 'mod_nom'
+      Size = 60
+    end
   end
   object FDCondutor: TFDQuery
     Active = True
@@ -82,12 +108,14 @@ object dtmEstacionamento: TdtmEstacionamento
       DisplayLabel = 'CNH'
       FieldName = 'con_cnh'
       Origin = 'con_cnh'
+      EditMask = '00000000000;0;_'
       Size = 15
     end
     object FDCondutorcon_cpf: TWideStringField
       DisplayLabel = 'CPF'
       FieldName = 'con_cpf'
       Origin = 'con_cpf'
+      EditMask = '000\.000\.000\-00;1;_'
       FixedChar = True
       Size = 14
     end

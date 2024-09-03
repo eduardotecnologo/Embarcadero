@@ -44,6 +44,9 @@ __published:	// IDE-managed Components
 	TWideStringField *FDCondutorcon_nom;
 	TWideStringField *FDCondutorcon_cnh;
 	TWideStringField *FDCondutorcon_cpf;
+	TIntegerField *FDModelomod_cod;
+	TIntegerField *FDModelomon_cod;
+	TWideStringField *FDModelomod_nom;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);

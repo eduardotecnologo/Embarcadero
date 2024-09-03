@@ -41,8 +41,8 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
   inherited tlbCadastroCRUD: TToolBar
     Top = 198
     Width = 485
-    ExplicitTop = 384
-    ExplicitWidth = 957
+    ExplicitTop = 198
+    ExplicitWidth = 485
   end
   object dbEditCodigo: TDBEdit [5]
     Left = 107
@@ -65,10 +65,11 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
   object dbEditCNH: TDBEdit [7]
     Left = 107
     Top = 117
-    Width = 126
+    Width = 122
     Height = 23
     DataField = 'con_cnh'
     DataSource = dtsPrincipal
+    MaxLength = 11
     TabOrder = 3
   end
   object dbEditCPF: TDBEdit [8]
@@ -78,6 +79,7 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
     Height = 23
     DataField = 'con_cpf'
     DataSource = dtsPrincipal
+    MaxLength = 14
     TabOrder = 4
   end
   inherited imgAtiva: TImageList
@@ -94,11 +96,11 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
   end
   inherited dtsPrincipal: TDataSource
     DataSet = dtmEstacionamento.FDCondutor
-    Left = 432
-    Top = 16
+    Left = 440
+    Top = 8
   end
   inherited aclCRUD: TActionList
-    Left = 432
-    Top = 72
+    Left = 440
+    Top = 64
   end
 end

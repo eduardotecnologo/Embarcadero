@@ -214,14 +214,14 @@
             <DependentOn>UFrmPrincipal.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <FormResources Include="UFrmCadastroMontadora.dfm"/>
         <FormResources Include="UFrmCadastroTipo.dfm"/>
         <FormResources Include="UFrmCadastroVeiculo.dfm"/>
         <FormResources Include="UFrmModeloCadastroCRUD.dfm"/>
         <FormResources Include="UFrmPrincipal.dfm"/>
-        <FormResources Include="UFrmCadastroMontadora.dfm"/>
+        <FormResources Include="DAO\UDtmEstacionamento.dfm"/>
         <FormResources Include="UFrmCadastroCondutor.dfm"/>
         <FormResources Include="UFrmCadastroModelo.dfm"/>
-        <FormResources Include="DAO\UDtmEstacionamento.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
