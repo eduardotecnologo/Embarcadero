@@ -24,6 +24,8 @@
 #include <FireDAC.DApt.Intf.hpp>
 #include <FireDAC.DatS.hpp>
 #include <FireDAC.Stan.Param.hpp>
+#include <Data.Bind.Components.hpp>
+#include <Data.Bind.DBScope.hpp>
 //---------------------------------------------------------------------------
 class TdtmEstacionamento : public TDataModule
 {
@@ -47,6 +49,12 @@ __published:	// IDE-managed Components
 	TIntegerField *FDModelomod_cod;
 	TIntegerField *FDModelomon_cod;
 	TWideStringField *FDModelomod_nom;
+	TIntegerField *FDVeiculovei_cod;
+	TIntegerField *FDVeiculomon_cod;
+	TIntegerField *FDVeiculomod_cod;
+	TIntegerField *FDVeiculotip_cod;
+	TWideStringField *FDVeiculovei_pla;
+	TIntegerField *FDVeiculovei_ano_fab;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);

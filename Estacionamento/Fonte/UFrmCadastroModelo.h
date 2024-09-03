@@ -19,6 +19,17 @@
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
+#include <FireDAC.Comp.Client.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <FireDAC.DApt.Intf.hpp>
+#include <FireDAC.DatS.hpp>
+#include <FireDAC.Phys.Intf.hpp>
+#include <FireDAC.Stan.Async.hpp>
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp>
+#include <FireDAC.Stan.Option.hpp>
+#include <FireDAC.Stan.Param.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroModelo : public TFrmModeloCadastroCRUD
 {
@@ -29,6 +40,9 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditMontadora;
 	TLabel *Label3;
 	TDBEdit *dbEditModelo;
+	TDBLookupComboBox *dbLKMontadora;
+	TDataSource *dtsMontadoraLK;
+	TFDQuery *qryMontadoraLK;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroModelo(TComponent* Owner);
