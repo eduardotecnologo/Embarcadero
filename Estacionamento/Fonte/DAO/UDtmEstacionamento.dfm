@@ -146,8 +146,88 @@ object dtmEstacionamento: TdtmEstacionamento
     end
   end
   object FDVeiculo: TFDQuery
+    Active = True
     Connection = FDConnection
+    SQL.Strings = (
+      'SELECT VEI_COD,'
+      '       MON_COD,'
+      '       MOD_COD,'
+      '       TIP_COD,'
+      '       VEI_PLA,'
+      '       VEI_ANO_FAB '
+      '     FROM VEICULO;')
     Left = 152
     Top = 256
+    object FDVeiculovei_cod: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'vei_cod'
+      Origin = 'vei_cod'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object FDVeiculomon_cod: TIntegerField
+      DisplayLabel = 'C'#243'd. Montadora'
+      FieldName = 'mon_cod'
+      Origin = 'mon_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDVeiculomod_cod: TIntegerField
+      DisplayLabel = 'C'#243'd. Modelo'
+      FieldName = 'mod_cod'
+      Origin = 'mod_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDVeiculotip_cod: TIntegerField
+      DisplayLabel = 'C'#243'd. Tipo'
+      FieldName = 'tip_cod'
+      Origin = 'tip_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDVeiculovei_pla: TWideStringField
+      DisplayLabel = 'Placa'
+      FieldName = 'vei_pla'
+      Origin = 'vei_pla'
+      Size = 12
+    end
+    object FDVeiculovei_ano_fab: TIntegerField
+      DisplayLabel = 'Fabrica'#231#227'o'
+      FieldName = 'vei_ano_fab'
+      Origin = 'vei_ano_fab'
+    end
+  end
+  object FDConducao: TFDQuery
+    Active = True
+    Connection = FDConnection
+    SQL.Strings = (
+      'SELECT CND_COD,'
+      '       CON_COD,'
+      '       VEI_COD '
+      '     FROM CONDUCAO;')
+    Left = 152
+    Top = 320
+    object FDConducaocnd_cod: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CND_COD'
+      Origin = 'cnd_cod'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDConducaocon_cod: TIntegerField
+      DisplayLabel = 'Cod. Conducao'
+      FieldName = 'CON_COD'
+      Origin = 'con_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDConducaovei_cod: TIntegerField
+      DisplayLabel = 'Cod. Ve'#237'culo'
+      FieldName = 'VEI_COD'
+      Origin = 'vei_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
   end
 end
