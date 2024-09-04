@@ -64,7 +64,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     DataSource = dtsPrincipal
     TabOrder = 3
   end
-  object dbLKMontadora: TDBLookupComboBox [7]
+  object dbMontadoraLK: TDBLookupComboBox [7]
     Left = 159
     Top = 69
     Width = 146

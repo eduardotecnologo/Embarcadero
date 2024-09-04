@@ -18,8 +18,8 @@ object FrmPrincipal: TFrmPrincipal
   WindowState = wsMaximized
   TextHeight = 15
   object mnmPrincipal: TMainMenu
-    Left = 40
-    Top = 64
+    Left = 16
+    Top = 16
     object A1: TMenuItem
       Caption = 'Cadastro'
       object Sair1: TMenuItem
@@ -44,6 +44,10 @@ object FrmPrincipal: TFrmPrincipal
       object ipo1: TMenuItem
         Caption = 'Tipo...'
         OnClick = EvAtivarCadastroTipoClick
+      end
+      object Conduo1: TMenuItem
+        Caption = 'Condu'#231#227'o'
+        OnClick = EvAtivarCadastroConducaoClick
       end
       object N4: TMenuItem
         Caption = '-'

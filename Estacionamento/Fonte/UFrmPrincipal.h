@@ -32,16 +32,19 @@ __published:	// IDE-managed Components
 	TMenuItem *mnLightClick;
 	TMenuItem *mnGlossyClick;
 	TMenuItem *mnPurpleClick;
+	TMenuItem *Conduo1;
 	void __fastcall EvEncerrarSistema(TObject *Sender);
 	void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroMontadoraClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroModeloClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroVeiculoClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroTipoClick(TObject *Sender);
+    void __fastcall EvAtivarCadastroConducaoClick(TObject *Sender);
 	void __fastcall mnDarkCLickClick(TObject *Sender);
 	void __fastcall mnLightClickClick(TObject *Sender);
 	void __fastcall mnGlossyClickClick(TObject *Sender);
 	void __fastcall mnPurpleClickClick(TObject *Sender);
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);

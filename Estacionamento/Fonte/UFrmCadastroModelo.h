@@ -40,7 +40,7 @@ __published:	// IDE-managed Components
 	TDBEdit *dbEditMontadora;
 	TLabel *Label3;
 	TDBEdit *dbEditModelo;
-	TDBLookupComboBox *dbLKMontadora;
+	TDBLookupComboBox *dbMontadoraLK;
 	TDataSource *dtsMontadoraLK;
 	TFDQuery *qryMontadoraLK;
 private:	// User declarations

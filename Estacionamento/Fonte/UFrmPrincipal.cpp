@@ -10,6 +10,7 @@
 #include "UFrmCadastroModelo.h"
 #include "UFrmCadastroVeiculo.h"
 #include "UFrmCadastroTipo.h"
+#include "UFrmCadastroConducao.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -78,8 +79,11 @@ void __fastcall TFrmPrincipal::EvAtivarCadastroTipoClick(TObject *Sender)
     new TFrmCadastroTipo(this);
 }
 //---------------------------------------------------------------------------
-
-
+void __fastcall TFrmPrincipal::EvAtivarCadastroConducaoClick(TObject *Sender)
+{
+    new TFrmCadastroConducao(this);
+}
+//-
 
 void __fastcall TFrmPrincipal::mnDarkCLickClick(TObject *Sender)
 {

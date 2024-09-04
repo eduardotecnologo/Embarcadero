@@ -25,7 +25,8 @@ inherited FrmCadastroMontadora: TFrmCadastroMontadora
   inherited tlbCadastroCRUD: TToolBar
     Top = 181
     Width = 476
-    ExplicitTop = 384
+    ExplicitTop = 181
+    ExplicitWidth = 476
   end
   object dbEditCodigo: TDBEdit [3]
     Left = 133

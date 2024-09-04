@@ -19,23 +19,42 @@
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
+#include <FireDAC.Comp.Client.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <FireDAC.DApt.Intf.hpp>
+#include <FireDAC.DatS.hpp>
+#include <FireDAC.Phys.Intf.hpp>
+#include <FireDAC.Stan.Async.hpp>
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp>
+#include <FireDAC.Stan.Option.hpp>
+#include <FireDAC.Stan.Param.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroVeiculo : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+	TDBLookupComboBox *dbMontadoraLK;
+	TFDQuery *qryMontadoraLK;
+	TDataSource *dtsMontadoraLK;
 	TLabel *Label1;
 	TDBEdit *dbEditCodigo;
-	TDataSource *DataSource1;
 	TLabel *Label2;
-	TDBEdit *dbEditModelo;
-	TLabel *Label3;
 	TDBEdit *dbEditMontadora;
+	TLabel *Label3;
+	TDBEdit *DBEdit3;
 	TLabel *Label4;
-	TDBEdit *dbEditTipo;
+	TDBEdit *DBEdit4;
 	TLabel *Label5;
-	TDBEdit *dbEditPlaca;
+	TDBEdit *DBEdit5;
 	TLabel *Label6;
-	TDBEdit *dbEditfabricacao;
+	TDBEdit *DBEdit6;
+	TDBLookupComboBox *dbModeloLK;
+	TDataSource *dtsModeloLK;
+	TFDQuery *qryModeloLK;
+	TDBLookupComboBox *dbTipoLK;
+	TDataSource *dtsTipoLK;
+	TFDQuery *qryTipoLK;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroVeiculo(TComponent* Owner);

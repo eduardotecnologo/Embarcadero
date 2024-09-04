@@ -55,6 +55,10 @@ __published:	// IDE-managed Components
 	TIntegerField *FDVeiculotip_cod;
 	TWideStringField *FDVeiculovei_pla;
 	TIntegerField *FDVeiculovei_ano_fab;
+	TFDQuery *FDConducao;
+	TIntegerField *FDConducaocnd_cod;
+	TIntegerField *FDConducaocon_cod;
+	TIntegerField *FDConducaovei_cod;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);

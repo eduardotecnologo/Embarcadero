@@ -197,4 +197,37 @@ object dtmEstacionamento: TdtmEstacionamento
       Origin = 'vei_ano_fab'
     end
   end
+  object FDConducao: TFDQuery
+    Active = True
+    Connection = FDConnection
+    SQL.Strings = (
+      'SELECT CND_COD,'
+      '       CON_COD,'
+      '       VEI_COD '
+      '     FROM CONDUCAO;')
+    Left = 152
+    Top = 320
+    object FDConducaocnd_cod: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CND_COD'
+      Origin = 'cnd_cod'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDConducaocon_cod: TIntegerField
+      DisplayLabel = 'Cod. Conducao'
+      FieldName = 'CON_COD'
+      Origin = 'con_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object FDConducaovei_cod: TIntegerField
+      DisplayLabel = 'Cod. Ve'#237'culo'
+      FieldName = 'VEI_COD'
+      Origin = 'vei_cod'
+      MaxValue = 2000
+      MinValue = 1
+    end
+  end
 end
