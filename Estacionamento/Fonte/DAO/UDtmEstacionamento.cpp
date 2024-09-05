@@ -17,10 +17,12 @@ __fastcall TdtmEstacionamento::TdtmEstacionamento(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TdtmEstacionamento::ConfigureLookUp(TFDQuery* AQuery)
 {
+    // Ativa os LookUp default
    if(AQuery->Active)
    {
-    AQuery->Close();
+	AQuery->Close();
    }
+
    AQuery->Connection = FDConnection;
    AQuery->Open();
 }

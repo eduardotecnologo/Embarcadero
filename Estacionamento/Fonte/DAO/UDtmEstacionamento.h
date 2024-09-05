@@ -60,9 +60,10 @@ __published:	// IDE-managed Components
 	TIntegerField *FDConducaocon_cod;
 	TIntegerField *FDConducaovei_cod;
 private:	// User declarations
+
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
-	void __fastcall ConfigureLookUp(TFDQuery* AQuery);
+    void __fastcall ConfigureLookUp(TFDQuery* AQuery);
 
 };
 //---------------------------------------------------------------------------

@@ -33,4 +33,4 @@ portainer/portainer
 ## Correções
 [] Botão de Power!
 [] Corrigir LookuoCombobox
-[] 
+[] Inicializar os ConfigureLookUp
