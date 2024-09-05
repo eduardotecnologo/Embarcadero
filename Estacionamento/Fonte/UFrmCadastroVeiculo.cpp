@@ -21,3 +21,10 @@ __fastcall TFrmCadastroVeiculo::TFrmCadastroVeiculo(TComponent* Owner)
 	 //dtmEstacionamento->ConfigureLookUp(qryTipoLK);
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmCadastroVeiculo::EvAtualizarMontadoraLKClick(TObject *Sender)
+
+{
+    dtmEstacionamento->AtualizeLookUp(qryMontadoraLK);
+}
+//---------------------------------------------------------------------------
+

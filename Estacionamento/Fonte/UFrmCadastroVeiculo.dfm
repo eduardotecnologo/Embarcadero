@@ -57,7 +57,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   inherited tlbCadastroCRUD: TToolBar
     Top = 256
     Width = 488
-    ExplicitTop = 216
+    ExplicitTop = 256
     ExplicitWidth = 488
   end
   object dbMontadoraLK: TDBLookupComboBox [7]
@@ -70,6 +70,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     KeyField = 'mon_cod'
     ListField = 'mon_nom'
     ListSource = dtsMontadoraLK
+    PopupMenu = ppmMontadoraLK
     TabOrder = 1
   end
   object dbEditCodigo: TDBEdit [8]
@@ -185,7 +186,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   end
   object dtsMontadoraLK: TDataSource
     DataSet = qryMontadoraLK
-    Left = 240
+    Left = 264
     Top = 8
   end
   object dtsModeloLK: TDataSource
@@ -220,5 +221,13 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
       '       ORDER BY TIP_DES;')
     Left = 320
     Top = 200
+  end
+  object ppmMontadoraLK: TPopupMenu
+    Left = 200
+    Top = 8
+    object AtualizarMontadora1: TMenuItem
+      Caption = 'Atualizar Montadora'
+      OnClick = EvAtualizarMontadoraLKClick
+    end
   end
 end

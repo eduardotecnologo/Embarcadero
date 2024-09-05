@@ -63,7 +63,8 @@ private:	// User declarations
 
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
-    void __fastcall ConfigureLookUp(TFDQuery* AQuery);
+	void __fastcall ConfigureLookUp(TFDQuery* AQuery);
+	void __fastcall AtualizeLookUp(TFDQuery* AQuery);
 
 };
 //---------------------------------------------------------------------------

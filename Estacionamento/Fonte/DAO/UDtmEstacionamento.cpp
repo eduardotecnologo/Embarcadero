@@ -27,3 +27,9 @@ void __fastcall TdtmEstacionamento::ConfigureLookUp(TFDQuery* AQuery)
    AQuery->Open();
 }
 //---------------------------------------------------------------------------
+void __fastcall TdtmEstacionamento::AtualizeLookUp(TFDQuery* AQuery)
+{
+  AQuery->Close();
+  AQuery->Open();
+}
+//---------------------------------------------------------------------------
