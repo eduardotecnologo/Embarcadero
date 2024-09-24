@@ -227,7 +227,23 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     Top = 8
     object AtualizarMontadora1: TMenuItem
       Caption = 'Atualizar Montadora'
-      OnClick = EvAtualizarMontadoraLKClick
+      OnClick = EvAtualizarTipoLKClick
+    end
+  end
+  object ppmModeloLK: TPopupMenu
+    OnClose = EvAtualizarModeloLKClick
+    Left = 168
+    Top = 8
+    object AtualizarModelo1: TMenuItem
+      Caption = 'Atualizar Modelo'
+    end
+  end
+  object ppmTipoLk: TPopupMenu
+    OnClose = EvAtualizarTipoLKClick
+    Left = 16
+    Top = 8
+    object AtualizarTtulo1: TMenuItem
+      Caption = 'Atualizar T'#237'tulo'
     end
   end
 end

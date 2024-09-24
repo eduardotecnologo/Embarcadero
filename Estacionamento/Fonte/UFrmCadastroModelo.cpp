@@ -14,5 +14,13 @@ TFrmCadastroModelo *FrmCadastroModelo;
 __fastcall TFrmCadastroModelo::TFrmCadastroModelo(TComponent* Owner)
 	: TFrmModeloCadastroCRUD(Owner)
 {
+	dtmEstacionamento->ConfigureLookUp(qryMontadoraLK);
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TFrmCadastroModelo::EvAtualizeMontadoraClickLK(TObject *Sender)
+{
+	dtmEstacionamento->AtualizeLookUp(qryMontadoraLK);
+}
+//---------------------------------------------------------------------------
+
