@@ -48,14 +48,41 @@ void __fastcall TdtmEstacionamento::GraveConducao()
 {  // outra forma
    if(qryConducao->State == dsInsert || qryConducao->State == dsEdit)
    {
-      qryConducao->Post();
+	  qryConducao->Post();
    }
 }
-
+//---------------------------------------------------------------------------
 void __fastcall TdtmEstacionamento::EvAddDataHoraCorrenteNewRecord(TDataSet *DataSet)
 {
 	qryTicketTIC_DAT->AsDateTime     = Date();
 	qryTicketTIC_HOR_ENT->AsDateTime = Now();
 }
 //---------------------------------------------------------------------------
-
+void __fastcall TdtmEstacionamento::AtribuaHoraSaidaTicket()
+{
+	qryTicket->Edit();
+	qryTicketTIC_HOR_SAI->AsDateTime = Now();
+}
+//---------------------------------------------------------------------------
+bool __fastcall TdtmEstacionamento::Pesquise(TFDQuery *AQuery, UnicodeString ANomePK,
+							                 int AValorPerquisa)
+{
+    //generic search
+   bool resultado = false;
+   if(AQuery)
+   {
+	 try
+	 {
+		 AQuery->DisableControls();
+		 AQuery->Close();
+		 AQuery->ParamByName(ANomePK)->AsInteger = AValorPerquisa;
+		 AQuery->Open();
+		 resultado = !AQuery->IsEmpty();
+     }
+	 __finally
+	 {
+		AQuery->EnableControls();
+        return resultado;
+	 }
+   }
+}

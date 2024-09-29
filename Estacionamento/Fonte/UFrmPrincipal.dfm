@@ -6,7 +6,7 @@ object FrmPrincipal: TFrmPrincipal
     'Formul'#225'rio Principal - Sistema de controle de ticket de estacion' +
     'amento'
   ClientHeight = 455
-  ClientWidth = 926
+  ClientWidth = 534
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

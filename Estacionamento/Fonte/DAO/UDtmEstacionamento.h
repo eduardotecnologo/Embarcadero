@@ -69,13 +69,15 @@ __published:	// IDE-managed Components
 	TDataSource *dtsConducaoTicketMD;
 	void __fastcall EvAddDataHoraCorrenteNewRecord(TDataSet *DataSet);
 private:	// User declarations
-
+	bool __fastcall Pesquise(TFDQuery *AQuery, UnicodeString ANomePK,
+							 int AValorPerquisa);
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
 	void __fastcall ConfigureLookUp(TFDQuery* AQuery);
 	void __fastcall AtualizeLookUp(TFDQuery* AQuery);
 	void __fastcall LimpeModeloVeiculo();
-    void __fastcall GraveConducao();
+	void __fastcall GraveConducao();
+    void __fastcall AtribuaHoraSaidaTicket();
 
 };
 //---------------------------------------------------------------------------

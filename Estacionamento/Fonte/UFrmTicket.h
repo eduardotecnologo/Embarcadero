@@ -33,6 +33,7 @@
 #include <FireDAC.Stan.Option.hpp>
 #include <FireDAC.Stan.Param.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.Buttons.hpp>
 //---------------------------------------------------------------------------
 class TFrmTicket : public TFrmModeloCadastroCRUD
 {
@@ -57,9 +58,11 @@ __published:	// IDE-managed Components
 	TPopupMenu *ppmVeiculo;
 	TMenuItem *Atualizar1;
 	TMenuItem *AtualizarVeculo1;
+	TBitBtn *btnHoraSaida;
 	void __fastcall EvAtualizarLKCondutor(TObject *Sender);
 	void __fastcall EvAtualizarLKVeiculo(TObject *Sender);
 	void __fastcall EvGravarConducao(TObject *Sender);
+	void __fastcall EvAddHoraAtualSaidaNoTicket(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmTicket(TComponent* Owner);

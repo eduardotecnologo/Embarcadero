@@ -8,6 +8,9 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
 //---------------------------------------------------------------------------
 class TFrmPrincipal : public TForm
 {
@@ -47,6 +50,7 @@ __published:	// IDE-managed Components
 	void __fastcall EvAtivarTicketClick(TObject *Sender);
 
 private:	// User declarations
+
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);
 };
