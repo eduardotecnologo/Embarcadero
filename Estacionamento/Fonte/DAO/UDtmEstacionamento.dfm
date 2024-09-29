@@ -157,7 +157,7 @@ object dtmEstacionamento: TdtmEstacionamento
       '       VEI_ANO_FAB '
       '     FROM VEICULO;')
     Left = 152
-    Top = 256
+    Top = 253
     object qryVeiculoVEI_COD: TIntegerField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'VEI_COD'
@@ -263,15 +263,15 @@ object dtmEstacionamento: TdtmEstacionamento
       Origin = 'tic_num'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
     end
-    object qryTicketcnd_cod: TIntegerField
+    object qryTicketCND_COD: TIntegerField
       DisplayLabel = 'Cod. Condutor'
       FieldName = 'CND_COD'
-      Origin = 'cnd_cod'
+      Origin = 'CND_COD'
     end
-    object qryTickettic_dat: TSQLTimeStampField
+    object qryTicketTIC_DAT: TSQLTimeStampField
       DisplayLabel = 'Data'
       FieldName = 'TIC_DAT'
-      Origin = 'tic_dat'
+      Origin = 'TIC_DAT'
       ProviderFlags = [pfInUpdate]
       DisplayFormat = 'dd/mm/yyyy'
       EditMask = '00/00/0000;1;_'
@@ -279,20 +279,20 @@ object dtmEstacionamento: TdtmEstacionamento
     object qryTickettic_hor_ent: TSQLTimeStampField
       DisplayLabel = 'Entrada'
       FieldName = 'TIC_HOR_ENT'
-      Origin = 'tic_hor_ent'
+      Origin = 'TIC_HOR_ENT'
       ProviderFlags = [pfInUpdate]
       DisplayFormat = 'hh:nn:ss'
       EditMask = '00:00:00;1;_'
     end
-    object qryTickettic_hor_sai: TSQLTimeStampField
+    object qryTicketTIC_HOR_SAI: TSQLTimeStampField
       DisplayLabel = 'Sa'#237'da'
       FieldName = 'TIC_HOR_SAI'
-      Origin = 'tic_hor_sai'
+      Origin = 'TIC_HOR_SAI'
       ProviderFlags = [pfInUpdate]
       DisplayFormat = 'hh:nn:ss'
       EditMask = '00:00:00;1;_'
     end
-    object qryTickettic_val_pag: TBCDField
+    object qryTicketTIC_VAL_PAG: TBCDField
       DisplayLabel = 'Valor Pago'
       FieldName = 'TIC_VAL_PAG'
       Origin = 'TIC_VAL_PAG'

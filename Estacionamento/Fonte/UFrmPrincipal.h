@@ -8,6 +8,9 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
 //---------------------------------------------------------------------------
 class TFrmPrincipal : public TForm
 {
@@ -33,6 +36,8 @@ __published:	// IDE-managed Components
 	TMenuItem *mnGlossyClick;
 	TMenuItem *mnPurpleClick;
 	TMenuItem *Conduo1;
+	TGroupBox *GroupBox1;
+	TImage *Image1;
 	void __fastcall EvEncerrarSistema(TObject *Sender);
 	void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroMontadoraClick(TObject *Sender);

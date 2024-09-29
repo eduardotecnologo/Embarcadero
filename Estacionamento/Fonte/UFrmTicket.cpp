@@ -33,3 +33,8 @@ void __fastcall TFrmTicket::EvGravarConducao(TObject *Sender)
    dtmEstacionamento->GraveConducao();
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmTicket::EvAddHoraAtualSaidaNoTicket(TObject *Sender)
+{
+	dtmEstacionamento->AtribuaHoraSaidaTicket();
+}
+//---------------------------------------------------------------------------
