@@ -36,8 +36,6 @@ __published:	// IDE-managed Components
 	TMenuItem *mnGlossyClick;
 	TMenuItem *mnPurpleClick;
 	TMenuItem *Conduo1;
-	TGroupBox *GroupBox1;
-	TImage *Image1;
 	void __fastcall EvEncerrarSistema(TObject *Sender);
 	void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroMontadoraClick(TObject *Sender);
@@ -52,6 +50,7 @@ __published:	// IDE-managed Components
 	void __fastcall EvAtivarTicketClick(TObject *Sender);
 
 private:	// User declarations
+
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);
 };
