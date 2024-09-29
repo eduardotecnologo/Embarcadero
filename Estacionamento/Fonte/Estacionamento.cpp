@@ -11,10 +11,10 @@ USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
 USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastroVeiculo);
 USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
 USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
-USEFORM("DAO\UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
-USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
 USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
+USEFORM("DAO\UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
 USEFORM("UFrmCadastroConducao.cpp", FrmCadastroConducao);
+USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {

@@ -26,6 +26,7 @@ inherited FrmCadastroTipo: TFrmCadastroTipo
     Top = 197
     Width = 479
     ExplicitTop = 384
+    ExplicitWidth = 479
   end
   object deEditCodigo: TDBEdit [3]
     Left = 73

@@ -165,7 +165,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     Top = 64
   end
   inherited dtsPrincipal: TDataSource
-    DataSet = dtmEstacionamento.FDVeiculo
+    DataSet = dtmEstacionamento.qryVeiculo
     Left = 389
     Top = 8
   end
