@@ -14,5 +14,17 @@ TFrmTicket *FrmTicket;
 __fastcall TFrmTicket::TFrmTicket(TComponent* Owner)
 	: TFrmModeloCadastroCRUD(Owner)
 {
+	dtmEstacionamento->ConfigureLookUp(qryCondutorLK);
+    dtmEstacionamento->ConfigureLookUp(qryVeiculoLK);
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmTicket::EvAtualizarLKCondutor(TObject *Sender)
+{
+    dtmEstacionamento->AtualizeLookUp(qryCondutorLK);
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmTicket::EvAtualizarLKVeiculo(TObject *Sender)
+{
+   dtmEstacionamento->AtualizeLookUp(qryVeiculoLK);
 }
 //---------------------------------------------------------------------------

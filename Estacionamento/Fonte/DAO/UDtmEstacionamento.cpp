@@ -37,6 +37,7 @@ void __fastcall TdtmEstacionamento::LimpeModeloVeiculo()
 		qryVeiculoMON_COD->NewValue != qryVeiculoMON_COD->OldValue;
 	bool isEditingOrInserting =
 		qryVeiculo->State == dsEdit || qryVeiculo->State == dsInsert;
+
     if (monCodChanged && isEditingOrInserting)
 	{
 		qryVeiculoMOD_COD->AsVariant = Null();

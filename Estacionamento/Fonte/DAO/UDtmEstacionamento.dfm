@@ -234,6 +234,7 @@ object dtmEstacionamento: TdtmEstacionamento
     Active = True
     MasterSource = dtsConducaoTicketMD
     MasterFields = 'CND_COD'
+    DetailFields = 'CND_COD'
     Connection = FDConnection
     FetchOptions.AssignedValues = [evCache]
     FetchOptions.Cache = [fiBlobs, fiMeta]

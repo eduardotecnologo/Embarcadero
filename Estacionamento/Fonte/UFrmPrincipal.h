@@ -44,6 +44,7 @@ __published:	// IDE-managed Components
 	void __fastcall mnLightClickClick(TObject *Sender);
 	void __fastcall mnGlossyClickClick(TObject *Sender);
 	void __fastcall mnPurpleClickClick(TObject *Sender);
+	void __fastcall EvAtivarTicketClick(TObject *Sender);
 
 private:	// User declarations
 public:		// User declarations

@@ -11,6 +11,7 @@
 #include "UFrmCadastroVeiculo.h"
 #include "UFrmCadastroTipo.h"
 #include "UFrmCadastroConducao.h"
+#include "UFrmTicket.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -64,7 +65,7 @@ void __fastcall TFrmPrincipal::EvAtivarCadastroMontadoraClick(TObject *Sender)
 
 void __fastcall TFrmPrincipal::EvAtivarCadastroModeloClick(TObject *Sender)
 {
-    new TFrmCadastroModelo(this);
+	new TFrmCadastroModelo(this);
 }
 //---------------------------------------------------------------------------
 
@@ -107,6 +108,12 @@ void __fastcall TFrmPrincipal::mnGlossyClickClick(TObject *Sender)
 void __fastcall TFrmPrincipal::mnPurpleClickClick(TObject *Sender)
 {
    ApplyPurpleTheme();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarTicketClick(TObject *Sender)
+{
+	new TFrmTicket(this);
 }
 //---------------------------------------------------------------------------
 

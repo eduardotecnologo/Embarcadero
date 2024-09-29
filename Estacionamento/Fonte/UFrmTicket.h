@@ -19,23 +19,46 @@
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
+#include <FireDAC.Comp.Client.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <FireDAC.DApt.Intf.hpp>
+#include <FireDAC.DatS.hpp>
+#include <FireDAC.Phys.Intf.hpp>
+#include <FireDAC.Stan.Async.hpp>
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp>
+#include <FireDAC.Stan.Option.hpp>
+#include <FireDAC.Stan.Param.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFrmTicket : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+	TGroupBox *grbConducao;
+	TGroupBox *grbTicket;
+	TDataSource *dtsTicket;
+	TDBGrid *DBGrid1;
 	TLabel *Label1;
-	TDBEdit *DBEdit1;
-	TDataSource *DataSource1;
+	TDBEdit *dbCodigo;
 	TLabel *Label2;
-	TDBEdit *DBEdit2;
+	TDBEdit *dbCondutor;
 	TLabel *Label3;
-	TDBEdit *DBEdit3;
-	TLabel *Label4;
-	TDBEdit *DBEdit4;
-	TLabel *Label5;
-	TDBEdit *DBEdit5;
-	TLabel *Label6;
-	TDBEdit *DBEdit6;
+	TDBEdit *dbVeiculo;
+	TDBLookupComboBox *dblkCondutor;
+	TDataSource *dtsCondutorLK;
+	TFDQuery *qryCondutorLK;
+	TDBLookupComboBox *dblkVeiculo;
+	TFDQuery *qryVeiculoLK;
+	TDataSource *dtsVeiculoLK;
+	TPopupMenu *ppmCondutor;
+	TPopupMenu *ppmVeiculo;
+	TMenuItem *Atualizar1;
+	TMenuItem *AtualizarVeculo1;
+	void __fastcall EvAtualizarLKCondutor(TObject *Sender);
+	void __fastcall EvAtualizarLKVeiculo(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmTicket(TComponent* Owner);

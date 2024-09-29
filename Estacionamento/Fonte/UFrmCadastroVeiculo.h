@@ -58,7 +58,13 @@ __published:	// IDE-managed Components
 	TFDQuery *qryTipoLK;
 	TPopupMenu *ppmMontadoraLK;
 	TMenuItem *AtualizarMontadora1;
-	void __fastcall EvAtualizarMontadoraLKClick(TObject *Sender);
+	TPopupMenu *ppmModeloLK;
+	TMenuItem *AtualizarModelo1;
+	TPopupMenu *ppmTipoLk;
+	TMenuItem *AtualizarTtulo1;
+	void __fastcall EvAtualizarTipoLKClick(TObject *Sender);
+	void __fastcall EvAtualizarModeloLKClick(TObject *Sender);
+	void __fastcall EvSairFormularioClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroVeiculo(TComponent* Owner);
