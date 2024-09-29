@@ -15,6 +15,7 @@ USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
 USEFORM("DAO\UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
 USEFORM("UFrmCadastroConducao.cpp", FrmCadastroConducao);
 USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
+USEFORM("UFrmTicket.cpp", FrmTicket);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -25,6 +26,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
 		Application->CreateForm(__classid(TdtmEstacionamento), &dtmEstacionamento);
 		Application->CreateForm(__classid(TFrmCadastroConducao), &FrmCadastroConducao);
+		Application->CreateForm(__classid(TFrmTicket), &FrmTicket);
 		Application->Run();
 	}
 	catch (Exception &exception)

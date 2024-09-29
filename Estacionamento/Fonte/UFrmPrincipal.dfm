@@ -62,6 +62,7 @@ object FrmPrincipal: TFrmPrincipal
       object icket1: TMenuItem
         Caption = 'Ticket...'
         ShortCut = 16468
+        OnClick = EvAtivarTicketClick
       end
     end
     object Relatrio1: TMenuItem

@@ -221,6 +221,12 @@
             <DependentOn>UFrmPrincipal.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <CppCompile Include="UFrmTicket.cpp">
+            <Form>FrmTicket</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmTicket.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
         <FormResources Include="UFrmCadastroMontadora.dfm"/>
         <FormResources Include="UFrmCadastroTipo.dfm"/>
         <FormResources Include="UFrmCadastroVeiculo.dfm"/>
@@ -230,6 +236,7 @@
         <FormResources Include="DAO\UDtmEstacionamento.dfm"/>
         <FormResources Include="UFrmCadastroConducao.dfm"/>
         <FormResources Include="UFrmCadastroCondutor.dfm"/>
+        <FormResources Include="UFrmTicket.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

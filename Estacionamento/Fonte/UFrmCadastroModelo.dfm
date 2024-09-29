@@ -1,7 +1,9 @@
 inherited FrmCadastroModelo: TFrmCadastroModelo
+  Top = 11
   Caption = 'Cadastro de Modelo'
   ClientHeight = 220
   ClientWidth = 476
+  Position = poDesigned
   StyleElements = [seFont, seClient, seBorder]
   ExplicitWidth = 492
   ExplicitHeight = 259
@@ -33,7 +35,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
   inherited tlbCadastroCRUD: TToolBar
     Top = 162
     Width = 476
-    ExplicitTop = 181
+    ExplicitTop = 162
     ExplicitWidth = 476
   end
   object dbEditCodigo: TDBEdit [4]
@@ -74,6 +76,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     KeyField = 'mon_cod'
     ListField = 'mon_nom'
     ListSource = dtsMontadoraLK
+    PopupMenu = ppmMontadora
     TabOrder = 4
   end
   inherited imgAtiva: TImageList
@@ -111,5 +114,13 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
       '       FROM MONTADORA;')
     Left = 189
     Top = 4
+  end
+  object ppmMontadora: TPopupMenu
+    Left = 312
+    Top = 64
+    object AtializeMontadora1: TMenuItem
+      Caption = 'Atialize Montadora'
+      OnClick = EvAtualizeMontadoraClickLK
+    end
   end
 end
