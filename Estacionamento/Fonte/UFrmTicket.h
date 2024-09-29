@@ -59,6 +59,7 @@ __published:	// IDE-managed Components
 	TMenuItem *AtualizarVeculo1;
 	void __fastcall EvAtualizarLKCondutor(TObject *Sender);
 	void __fastcall EvAtualizarLKVeiculo(TObject *Sender);
+	void __fastcall EvGravarConducao(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmTicket(TComponent* Owner);

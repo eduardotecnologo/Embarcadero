@@ -74,6 +74,7 @@ public:		// User declarations
 	void __fastcall ConfigureLookUp(TFDQuery* AQuery);
 	void __fastcall AtualizeLookUp(TFDQuery* AQuery);
 	void __fastcall LimpeModeloVeiculo();
+    void __fastcall GraveConducao();
 
 };
 //---------------------------------------------------------------------------
