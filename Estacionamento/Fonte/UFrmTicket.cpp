@@ -28,3 +28,8 @@ void __fastcall TFrmTicket::EvAtualizarLKVeiculo(TObject *Sender)
    dtmEstacionamento->AtualizeLookUp(qryVeiculoLK);
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmTicket::EvGravarConducao(TObject *Sender)
+{
+   dtmEstacionamento->GraveConducao();
+}
+//---------------------------------------------------------------------------

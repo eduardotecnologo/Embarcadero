@@ -38,10 +38,16 @@ void __fastcall TdtmEstacionamento::LimpeModeloVeiculo()
 	bool isEditingOrInserting =
 		qryVeiculo->State == dsEdit || qryVeiculo->State == dsInsert;
 
-    if (monCodChanged && isEditingOrInserting)
+	if (monCodChanged && isEditingOrInserting)
 	{
 		qryVeiculoMOD_COD->AsVariant = Null();
 	}
 }
 //---------------------------------------------------------------------------
-
+void __fastcall TdtmEstacionamento::GraveConducao()
+{  // outra forma
+   if(qryConducao->State == dsInsert || qryConducao->State == dsEdit)
+   {
+      qryConducao->Post();
+   }
+}
