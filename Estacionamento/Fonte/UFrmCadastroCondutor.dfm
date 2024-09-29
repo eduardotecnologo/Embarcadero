@@ -95,7 +95,7 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
     Top = 64
   end
   inherited dtsPrincipal: TDataSource
-    DataSet = dtmEstacionamento.FDCondutor
+    DataSet = dtmEstacionamento.qryCondutor
     Left = 440
     Top = 8
   end

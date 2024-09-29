@@ -5,6 +5,8 @@
 
 #include "UFrmCadastroVeiculo.h"
 #include "UDtmEstacionamento.h"
+
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "UFrmModeloCadastroCRUD"
@@ -14,5 +16,15 @@ TFrmCadastroVeiculo *FrmCadastroVeiculo;
 __fastcall TFrmCadastroVeiculo::TFrmCadastroVeiculo(TComponent* Owner)
 	: TFrmModeloCadastroCRUD(Owner)
 {
+	 //dtmEstacionamento->ConfigureLookUp(qryMontadoraLK);
+	 //dtmEstacionamento->ConfigureLookUp(qryModeloLK);
+	 //dtmEstacionamento->ConfigureLookUp(qryTipoLK);
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmCadastroVeiculo::EvAtualizarMontadoraLKClick(TObject *Sender)
+
+{
+    dtmEstacionamento->AtualizeLookUp(qryMontadoraLK);
+}
+//---------------------------------------------------------------------------
+

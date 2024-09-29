@@ -30,6 +30,7 @@
 #include <FireDAC.Stan.Intf.hpp>
 #include <FireDAC.Stan.Option.hpp>
 #include <FireDAC.Stan.Param.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroVeiculo : public TFrmModeloCadastroCRUD
 {
@@ -55,6 +56,9 @@ __published:	// IDE-managed Components
 	TDBLookupComboBox *dbTipoLK;
 	TDataSource *dtsTipoLK;
 	TFDQuery *qryTipoLK;
+	TPopupMenu *ppmMontadoraLK;
+	TMenuItem *AtualizarMontadora1;
+	void __fastcall EvAtualizarMontadoraLKClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroVeiculo(TComponent* Owner);

@@ -6,14 +6,15 @@
 //---------------------------------------------------------------------------
 #include <Vcl.Styles.hpp>
 #include <Vcl.Themes.hpp>
+USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
 USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
 USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastroVeiculo);
 USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
 USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
-USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
-USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
 USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
 USEFORM("DAO\UDtmEstacionamento.cpp", dtmEstacionamento); /* TDataModule: File Type */
+USEFORM("UFrmCadastroConducao.cpp", FrmCadastroConducao);
+USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -23,6 +24,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
 		Application->CreateForm(__classid(TdtmEstacionamento), &dtmEstacionamento);
+		Application->CreateForm(__classid(TFrmCadastroConducao), &FrmCadastroConducao);
 		Application->Run();
 	}
 	catch (Exception &exception)
