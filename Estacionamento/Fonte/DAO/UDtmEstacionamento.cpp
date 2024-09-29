@@ -51,3 +51,11 @@ void __fastcall TdtmEstacionamento::GraveConducao()
       qryConducao->Post();
    }
 }
+
+void __fastcall TdtmEstacionamento::EvAddDataHoraCorrenteNewRecord(TDataSet *DataSet)
+{
+	qryTicketTIC_DAT->AsDateTime     = Date();
+	qryTicketTIC_HOR_ENT->AsDateTime = Now();
+}
+//---------------------------------------------------------------------------
+

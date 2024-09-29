@@ -67,6 +67,7 @@ __published:	// IDE-managed Components
 	TSQLTimeStampField *qryTicketTIC_HOR_SAI;
 	TBCDField *qryTicketTIC_VAL_PAG;
 	TDataSource *dtsConducaoTicketMD;
+	void __fastcall EvAddDataHoraCorrenteNewRecord(TDataSet *DataSet);
 private:	// User declarations
 
 public:		// User declarations
