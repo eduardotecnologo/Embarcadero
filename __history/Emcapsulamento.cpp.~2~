@@ -1,0 +1,24 @@
+#include <iostream>
+#include <tchar.h>
+
+class Pessoa
+	{
+		public:
+			void nome()
+			{
+				std::cout << "Eduardo Alexandre" << '\n';
+			}
+	};
+
+class Habilidades : public Pessoa
+	{
+		public:
+		void idioma()
+			{
+				std::cout "Software Developer"
+			}
+	};
+int _tmain(int argc, _TCHAR* argv[])
+{
+
+}

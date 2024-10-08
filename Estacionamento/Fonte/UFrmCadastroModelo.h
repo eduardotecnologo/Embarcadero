@@ -31,6 +31,7 @@
 #include <FireDAC.Stan.Option.hpp>
 #include <FireDAC.Stan.Param.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroModelo : public TFrmModeloCadastroCRUD
 {

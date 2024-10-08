@@ -1,0 +1,18 @@
+#include <iostream>
+#include <tchar.h>
+#include <cstdio>
+#include <cstdlib>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	// insere a temperatura em Celsius
+	int celsius;
+
+	cout << "Entre com a temperatura em Celsius" << endl;
+	cin >> ceslcius;
+
+  system("pause");
+  return 0;
+}

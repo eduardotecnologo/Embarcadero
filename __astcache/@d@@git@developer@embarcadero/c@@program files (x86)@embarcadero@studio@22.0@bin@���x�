@@ -1,0 +1,18 @@
+#include <iostream>
+#include <tchar.h>
+
+class Exemplo{
+	public:
+		Exemplo(){
+			std::cout << "Iniciando o nosso exemplo! " << '\n';
+	}
+		-Exemplo(){
+            std::cout << "Fechando o projeto! " << '\n';
+		}
+}
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+
+}
