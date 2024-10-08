@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "FrmPrincipal.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFrmMain *FrmMain;
+//---------------------------------------------------------------------------
+__fastcall TFrmMain::TFrmMain(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmMain::BtnResultadoClick(TObject *Sender)
+{
+	if(CbxOperacao->ItemIndex == 0)
+	{
+		TEditResultado ->Text
+			= (TEditPrimeiroNumero->Text.Toint() * TEditSegundoNumero->Text.Toint());
+	}
+		else if(CbxOperacao->ItemIndex == 1)
+	{
+		TEditResultado ->Text
+			= (TEditPrimeiroNumero->Text.Toint() / TEditSegundoNumero->Text.Toint());
+	}
+		else if(CbxOperacao->ItemIndex == 2)
+	{
+		TEditResultado ->Text
+			= (TEditPrimeiroNumero->Text.Toint() + TEditSegundoNumero->Text.Toint());
+	}
+		else if(CbxOperacao->ItemIndex == 3)
+	{
+		TEditResultado ->Text
+			= (TEditPrimeiroNumero->Text.Toint() - TEditSegundoNumero->Text.Toint());
+	}
+}
+//---------------------------------------------------------------------------
