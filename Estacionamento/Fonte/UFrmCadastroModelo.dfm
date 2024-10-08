@@ -92,7 +92,6 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     Top = 56
   end
   inherited dtsPrincipal: TDataSource
-    DataSet = dtmEstacionamento.FDModelo
     Left = 432
     Top = 8
   end

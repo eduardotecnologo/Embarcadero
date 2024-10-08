@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#include <iostream>
+
+#pragma hdrstop
+
+#include "Calc.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+float Somar(float num1, float num2)
+{
+    return num1 + num2;
+}
+void __fastcall TForm1::BtnCalcularClick(TObject *Sender)
+{
+	float numero1, numero2, resultado;
+
+	numero1 = StrToFloat(Edit1->Text);
+	numero2 = StrToFloat(Edit2->Text);
+
+	resultado = Somar(numero1, numero2);
+
+	Edit3->Text = FloatToStr(resultado);
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/09/29 08:49:18.213,=C:\Users\EduDevWin\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/29 08:49:18.519,=C:\Users\EduDevWin\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2024/09/29 08:55:29.841,D:\Git\developer\Embarcadero\ConvertTenperatura\ConvTemperatura.cpp=C:\Users\EduDevWin\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2024/09/29 09:15:30.840,D:\Git\developer\Embarcadero\ConvertTenperatura\ConvTemperaturaPCH1.h=C:\Users\EduDevWin\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/09/29 09:15:30.878,D:\Git\developer\Embarcadero\ConvertTenperatura\ConvTemperatura.cbproj=C:\Users\EduDevWin\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

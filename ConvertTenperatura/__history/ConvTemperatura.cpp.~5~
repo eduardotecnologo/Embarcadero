@@ -1,0 +1,37 @@
+#include <iostream>
+#include <tchar.h>
+#include <cstdio>
+#include <cstdlib>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	// insere a temperatura em Celsius
+	int celsius;
+
+	cout << "Entre com a temperatura em Celsius" << endl;
+	cin >> celsius;
+
+	// calcular o fator de conversão de Celsius para Fahrenheit
+	int factor;
+	factor = 212 - 32;
+
+	// usar o fator de vonversão para conveter celsius em para valores
+	//em Fahrenheit
+	int fahrenheit;
+	fahrenheit = factor * celsius/100 + 32;
+
+	// exibir os resultados (seguido por uma nova linha)
+	cout << "O valor de Fahrenheit e: "  << endl;
+	cout << fahrenheit << endl;
+
+	// esperar até o usuário fechar o programa
+	cout << "Presione enter para fechar o programa..: " << endl;
+	cin.ignore(10, '\n');
+	cin.get();
+
+
+  system("pause");
+  return 0;
+}

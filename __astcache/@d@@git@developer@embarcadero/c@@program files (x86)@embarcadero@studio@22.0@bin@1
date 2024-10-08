@@ -1,0 +1,22 @@
+#include <iostream>
+#include <tchar.h>
+
+void funcao(int * ptr, int x){
+
+	 if(ptr == NULL || x == 0){
+
+	   std::cout << "Erro bizarro!" << '\n';
+	 }else{
+		std::cout << "O ponteiro é: " << *ptr << " e o múmero é: " << x << '\n';
+	 }
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+   int num = 10;
+   int * ponteiro = nullptr;
+
+   funcao(ponteiro, num);
+   system("pause");
+   return 0;
+}

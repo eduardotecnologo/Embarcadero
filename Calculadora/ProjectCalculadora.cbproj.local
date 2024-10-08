@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/05/15 19:10:03.352,=D:\Git\developer\Embarcadero\Project1PCH1.h</Transaction>
+    <Transaction>2024/05/15 19:10:03.414,=D:\Git\developer\Embarcadero\Unit1.cpp</Transaction>
+    <Transaction>2024/05/15 19:10:22.367,D:\Git\developer\Embarcadero\Calculadora\Calc.h=D:\Git\developer\Embarcadero\Unit1.h</Transaction>
+    <Transaction>2024/05/15 19:10:22.367,D:\Git\developer\Embarcadero\Calculadora\Calc.dfm=D:\Git\developer\Embarcadero\Unit1.dfm</Transaction>
+    <Transaction>2024/05/15 19:10:22.367,D:\Git\developer\Embarcadero\Calculadora\Calc.cpp=D:\Git\developer\Embarcadero\Unit1.cpp</Transaction>
+    <Transaction>2024/05/15 19:12:34.363,D:\Git\developer\Embarcadero\Calculadora\ProjectCalculadoraPCH1.h=D:\Git\developer\Embarcadero\Project1PCH1.h</Transaction>
+    <Transaction>2024/05/15 19:12:34.395,D:\Git\developer\Embarcadero\Calculadora\ProjectCalculadora.cbproj=D:\Git\developer\Embarcadero\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

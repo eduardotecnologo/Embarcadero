@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#include <iostream>
+
+#pragma hdrstop
+
+#include "Calc.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+float Somar(float num1, float num1)
+{
+    return num1 + num2;
+}

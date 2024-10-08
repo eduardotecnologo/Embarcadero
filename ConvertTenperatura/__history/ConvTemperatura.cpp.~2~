@@ -1,0 +1,13 @@
+#include <iostream>
+#include <tchar.h>
+#include <cstdio>
+#include <cstdlib>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+  cout << "Opa" << endl;
+  system("pause");
+  return 0;
+}
